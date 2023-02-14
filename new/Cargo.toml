@@ -1,0 +1,15 @@
+[package]
+name = "new"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "new_wrapper_boxed"
+path = "wrapper_boxed.rs"
+
+[[bin]]
+name = "new_enum"
+path = "enum.rs"
+
+[dependencies]
+glib = { git = "https://github.com/jf2048/gtk-rs-core.git", branch = "macro-deluxe-port", version = "0.18.0", default-features = false }

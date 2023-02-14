@@ -1,0 +1,15 @@
+[package]
+name = "old"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "old_wrapper_boxed"
+path = "wrapper_boxed.rs"
+
+[[bin]]
+name = "old_enum"
+path = "enum.rs"
+
+[dependencies]
+glib = { version = "0.17.1", features = ["v2_74"], default-features = false }
